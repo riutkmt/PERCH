@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | PERCH</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <!-- ロゴ -->
+
+    <a href="index-en.html" class="logo-link">
+
+        <img src="images/logo.png" alt="PERCH Logo" class="logo">
+
+    </a>
+
+    <a href="#" class="menu-btn">MENU</a>
+
+    <!-- 言語切替 -->
+
+    <div class="language">
+
+        <a href="gallery.html">JP</a>
+
+        <span>/</span>
+
+        <a href="gallery-en.html" class="active">EN</a>
+
+    </div>
+
+</header>
+
+ <!-- メイン動画 -->
+<div class="gallery-search">
+
+  <div class="search-area">
+
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="What are you in the mood for?"
+    >
+
+    <button class="search-close" id="searchClose">
+      ×
+    </button>
+
+  </div>
+
+  <!-- 検索候補がここに出る -->
+  <div class="search-results" id="searchResults"></div>
+
+</div>
+
+<section class="gallery-space">
+
+    <!-- 小さい絵 -->
+  <img src="images/sample2.jpg"
+       class="gallery-doodle doodle-01 fade-up"
+       alt="">
+
+   <!-- 作品 左-->
+ <a href="#"
+   class="gallery-work work-01 fade-up"
+   id="work-rain"
+   data-title="For a Special Day: A Little Magic .*･ﾟ⚪︎.ﾟ･*..*･ﾟ◯.ﾟ･*..*･ﾟ⚫︎.ﾟ･*."
+   data-keywords="romance tattoo sticker temporary tattoo sharing date special day wear fashion little magic gift"
+   data-info="Your Little Talisman"
+   data-text="A temporary tattoo to wear on a special day"
+   data-media="images/sample.jpg, images/sample.jpg, images/sample.jpg, images/sample.jpg">
+   
+   <img src="images/diary01.jpg" alt="photo">
+    <p class="work-title">
+    <span class="work-date">2026.07.09</span></p>
+   
+
+ </a>
+
+  <!-- 小さい絵 -->
+  <img src="images/sample7.jpg"
+       class="gallery-doodle doodle-02 fade-up"
+       alt="">
+
+
+  <!-- 作品 右-->
+  <a href="#"
+   class="gallery-work work-right fade-up"
+   id="work-wings"
+   data-title="A Day at Home: Japanese Traditional Craft... Natural Dyeing .⋆𝜗𝜚.†⋆"
+   data-keywords="alone gift exciting frame fun memories recycle fabric dyeing Japan try making decorate present color original work at home easy natural dyeing traditional craft"
+   data-info="Giving old fabric a new life"
+   data-text="Add color with the Japanese tradition of natural dyeing"
+   data-media="images/sample.jpg, images/sample.jpg, images/sample.jpg, images/sample.jpg">
+
+   <img src="images/sample3.jpg" alt="photo">
+     <p class="work-title">
+     <span class="work-date">2026.07.09</span></p>
+
+  </a>
+
+     <!-- 小さい絵 -->
+  <img src="images/sample5.jpg"
+       class="gallery-doodle doodle-02 fade-up"
+       alt="">
+
+
+   
+
+  <!-- 作品 右-->
+  <a href="#"
+   class="gallery-work work-right fade-up"
+   id="work-wings"
+   data-title="A Day Out: Experience Culture Through Pottery *˸*⋆。✻*"
+   data-keywords="hands rain weather focus meditation alone gift exciting fun memories Japan try making pottery bowl object present original work traditional craft"
+   data-info=""
+   data-text=""
+   data-media="images/sample.jpg, images/sample.jpg, images/sample.jpg, images/sample.jpg">
+
+    <img src="images/touki01.jpg" alt="photo">
+     <p class="work-title">
+     <span class="work-date">2026.07.09</span></p>
+
+  </a>
+
+   <!-- 小さい絵 -->
+   <img src="images/sample6.jpg"
+       class="gallery-doodle doodle-03 fade-up"
+       alt="">
+
+
+  <!-- 作品センター -->
+  <a href="#"
+   class="gallery-work work-center fade-up"
+   id="work-03"
+   data-title="For Your Work Session #1: Listen to Gia Margaret .:･*:.｡.‧✦‧.｡.:*･:."
+   data-keywords="can't sleep tired Gia Margaret artist recommendation loop video motion ambient zone out clear"
+   data-info="#1 Gia Margaret"
+   data-text="♫"
+   data-link="https://music.apple.com/jp/album/mia-gargaret/1688222915"
+   data-media="images/m1.mp4">
+
+  <video autoplay muted loop playsinline>
+    <source src="images/m1.mp4" type="video/mp4">
+  </video>
+
+  <p class="work-title">
+    <span class="work-date">2026.06.29</span>
+  </p>
+
+ </a>
+
+  <!-- 小さい絵 -->
+  <img src="images/sample4.jpg"
+       class="gallery-doodle doodle-04 fade-up"
+       alt="">
+
+  <!-- 作品 左-->
+  <a href="#"
+   class="gallery-work work-01 fade-up"
+   id="work-rain"
+   data-title="Emotions Moving Like the Sun and Moon: Take a Moment with the Paintings ꕤ︎︎｡°⋆"
+   data-keywords="thinking time secret hideaway emotions sensitive rain shelter rainy season illustration art painting seasons 2026 watercolor"
+   data-media="images/i01.jpg, images/i02.jpg, images/i03.jpg">
+   
+    <img src="images/kaiga01.jpg" alt="photo">
+    <p class="work-title">
+    <span class="work-date">2026.06.01</span></p>
+   
+
+   </a>
+
+</section>
+
+<!-- 作品オーバーレイ -->
+
+<div class="work-overlay" id="work-overlay">
+
+  <div class="work-overlay-images" id="work-overlay-images">
+  </div>
+
+  <div class="work-info" id="work-info"></div>
+
+  <button class="work-close" id="work-close">
+    CLOSE
+  </button>
+
+</div>
+
+<section>
+
+
+    <hr class="line-black fade-up">
+
+    <div class="index-credit01 fade-up">
+
+         <p>PERCH</p>
+         <p>CREATED BY RIU</p>
+         
+         <a href="index-en.html">
+           HOME →
+         </a>
+         <br><br>
+         <a href="about-en.html">
+           ABOUT →
+         </a>
+         <br><br>
+         <a href="contact-en.html">
+           CONTACT →
+         </a>
+    </div>
+
+   </section>
+
+  <!-- 下部写真 -->
+
+<section class="fade-up">
+
+    <img src="images/about02.png" alt="" class="bottom-image">
+
+</section>
+
+<section class="instagram-link">
+
+    <a href="https://www.instagram.com/perchgram?igsh=eW1pNG8zZnA1Y2Z5&utm_source=qr" target="_blank">
+
+        <img src="images/instagram.svg" alt="Instagram">
+
+    </a>
+
+</section>
+
+<div class="copyright">
+
+    <img src="images/copyright.svg" alt="Copyright">
+
+</div>
+
+ <div id="menu-overlay">
+
+    <button id="close-menu">CLOSE</button>
+
+    <nav class="overlay-nav">
+
+        <a href="index-en.html">HOME</a>
+
+        <a href="gallery-en.html">GALLERY</a>
+
+        <a href="about-en.html">ABOUT</a>
+
+        <a href="contact-en.html">CONTACT</a>
+
+    </nav>
+
+ </div>
+
+ <script src="script.js?v=2">
+
+ </script>
+
+</body>
+
+</html>
