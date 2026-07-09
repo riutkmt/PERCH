@@ -1,0 +1,1327 @@
+/* =====================
+   RESET
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =====================
+   BODY
+===================== */
+
+body{
+
+    background:#f8f8f8;
+    color:#111;
+
+    font-family:
+    "Yu Gothic Pr6N",
+    "Yu Gothic",
+    sans-serif;
+
+    line-height:2;
+
+    -webkit-font-smoothing:antialiased;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+header{
+
+    position:relative;
+
+    padding-top:120px;
+    padding-bottom:70px;
+
+    text-align:center;
+}
+
+
+
+/* =====================
+   LOGO
+===================== */
+
+.logo{
+
+    width:150px;
+
+    display:block;
+
+    margin:auto;
+}
+
+.logo-link{
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+/* =====================
+   MENU
+===================== */
+
+.menu-btn{
+
+    position:fixed;
+
+    left:28px;
+    top:80px;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:15px;
+
+    letter-spacing:0.08em;
+
+    cursor: pointer;
+
+    z-index: 1000;
+}
+
+/* =====================
+   LANGUAGE
+===================== */
+
+.language{
+
+    position:absolute;
+
+    right:25px;
+    bottom:10px;
+
+    font-size:14px;
+    font-weight: 550;
+
+    letter-spacing:0.08em;
+}
+
+.language a{
+
+    text-decoration:none;
+    color:#111;
+}
+
+.language .active{
+
+    opacity:1;
+}
+
+.language a:not(.active){
+
+    opacity:.4;
+}
+
+/* =====================
+   HERO
+===================== */
+
+.hero{
+
+    position:relative;
+}
+
+/* =====================
+   HERO IMAGE
+===================== */
+
+.hero-image{
+
+    width:100%;
+
+    max-width: 700px;
+
+    display:block;
+
+    margin:30px auto 40px;
+}
+
+/* =====================
+   HERO TEXT
+===================== */
+
+.hero-text{
+
+    position:absolute;
+
+    left:50px;
+    bottom:25px;
+
+    color:white;
+
+    text-shadow:
+    0 2px 12px rgba(0, 0, 0, .70);
+
+    z-index:10;
+}
+
+/* =====================
+   HERO TITLE
+===================== */
+
+.hero-text h1{
+
+    font-size:40px;
+
+    font-weight:600;
+
+    letter-spacing: -0.02em;
+
+    margin-bottom:5px;
+
+    line-height:1.3;
+}
+
+/* =====================
+   HERO SUBTITLE
+===================== */
+
+.hero-text p{
+
+    margin:0;
+
+    font-size:20px;
+}
+
+/* =====================
+   ABOUT TEXT
+===================== */
+
+.about-video{
+
+    width:100%;
+
+    max-width: 700px;
+
+    display:block;
+
+    margin: 30px auto 40px;
+}
+
+
+.about-text{
+
+    width:85%;
+
+    max-width:700px;
+
+    margin:80px auto;
+
+    font-size:15px;
+}
+
+.about-text p{
+
+    margin-bottom:30px;
+}
+
+.line-black{
+    border: none;
+    border-top: 1px solid #d0d0d0;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.credit{
+
+    color: #111;
+
+    margin-top:60px;
+
+    text-align:left;
+
+    font-size:14px;
+
+    letter-spacing:0.1em;
+}
+
+.credit a{
+
+    color: #111;
+}
+
+.credit a:hover{
+
+    color: #111;
+    opacity: 0.5;
+}
+
+/* =====================
+   BOTTOM IMAGE
+===================== */
+
+.bottom-image{
+
+    width:100%;
+
+    max-width: 700px;
+
+    display:block;
+
+    margin:100px auto 40px;
+}
+
+.scrolled .logo-link,
+.scrolled .menu-btn{
+
+    opacity:.35;
+
+    transition:.4s ease;
+}
+
+/* =====================
+   FADE UP
+===================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition: opacity 1.8s ease,transform 1.8s ease;
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+/* =====================
+   MOBILE
+===================== */
+
+@media screen and (max-width:701px){
+
+    .logo{
+
+        width:100px;
+    }
+
+    .hero-text{
+
+        left:30px;
+        bottom:20px;
+    }
+
+    .hero-text h1{
+
+        font-size:23px;
+    }
+
+    .hero-text p{
+
+        font-size:16px;
+    }
+
+    .about-text{
+
+        width:88%;
+    }
+
+}
+
+/* =====================
+   INSTAGRAM
+===================== */
+
+.instagram-link{
+
+    text-align:center;
+
+    margin-bottom:2px;
+}
+
+.instagram-link img{
+
+    width:50px;
+
+    height:auto;
+
+    opacity:.7;
+
+    transition:.3s ease;
+}
+
+.instagram-link img:hover{
+
+    opacity:1;
+
+    transform:translateY(-2px);
+}
+
+
+/* =====================
+   MENU BUTTON
+===================== */
+
+.menu-btn{
+
+    position:fixed;
+
+    left:28px;
+    top:80px;
+
+    background:none;
+
+    border:none;
+
+    color:#111;
+
+    font-size:14px;
+
+    font-weight: 550;
+
+    letter-spacing:.12em;
+
+    cursor:pointer;
+}
+
+
+/* =====================
+   MENU OVERLAY
+===================== */
+
+#menu-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.70);
+
+    backdrop-filter:blur(6px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.4s ease;
+
+    z-index:2000;
+
+    overflow: hidden;
+}
+
+#menu-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+}
+
+
+/* =====================
+   CLOSE
+===================== */
+
+#close-menu{
+
+    position:absolute;
+
+    top:84px;
+
+    left:28px;
+
+    border:none;
+
+    background:none;
+
+    color:#111;
+
+    font-size:15px;
+
+    font-weight: 550;
+
+    letter-spacing:.08em;
+
+    cursor:pointer;
+}
+
+
+/* =====================
+   NAVIGATION
+===================== */
+
+.overlay-nav{
+
+    text-align:center;
+}
+
+.overlay-nav a,
+.works-group span{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#111;
+
+    font-size:22px;
+
+    font-weight: 550;
+
+    margin:18px 0;
+
+    letter-spacing:.08em;
+
+}
+
+/* =====================
+   COPYRIGHT
+===================== */
+
+.copyright{
+
+    text-align:center;
+
+    margin-top:-20px;
+
+    margin-bottom:80px;
+}
+
+.copyright img{
+
+    width:150px;
+
+    height:auto;
+
+    opacity:.6;
+}
+
+/* =====================
+   CONTACT
+===================== */
+
+.contact-content a{
+
+    color:#111;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.contact-content a:hover{
+
+    opacity:.5;
+}
+
+.contact-content{
+
+    width:85%;
+
+    max-width:700px;
+
+    margin:80px auto;
+
+    font-size:15px;
+}
+
+.contact-content h1{
+
+    margin-bottom:30px;
+
+    font-size:20px;
+}
+
+.contact-content p{
+
+    margin-bottom:30px;
+    
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d0d0d0;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.contact-content a{
+
+    color:#111;
+
+    text-decoration:underline;
+
+    text-underline-offset:4px;
+
+    text-decoration-thickness:0.8px;
+}
+
+.contact-image{
+
+    width:60%;
+
+    max-width: 400px;
+
+    display:block;
+
+    margin:55px auto 55px;
+}
+
+/* =====================
+   GALLERY
+===================== */
+
+.gallery-area{
+
+    background:#000;
+
+    color:#fff;
+
+    min-height:0;
+
+    padding-top:0px;
+
+    padding-bottom:0px;
+
+}
+
+.hero-video{
+
+    background-color: #000;
+
+    width: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.gallery-credit a{
+
+    color:#fff;
+
+    transition:.3s;
+
+    text-decoration:underline;
+
+    text-underline-offset:4px;
+
+    text-decoration-thickness:0.8px;
+}
+
+.gallery-credit a:hover{
+
+    opacity:.5;
+}
+
+.gallery-credit{
+
+    width:85%;
+
+    max-width:700px;
+
+    margin:80px auto;
+
+    font-size:15px;
+}
+
+.gallery-credit h1{
+
+    margin-bottom:30px;
+
+    font-size:20px;
+}
+
+.gallery-credit p{
+
+    margin-bottom:30px;
+    
+}
+
+.gallery-credit{
+
+    color: #fff;
+
+    margin-top:60px;
+
+    text-align:left;
+
+    font-size:14px;
+
+    letter-spacing:0.1em;
+}
+
+/* =====================
+   COPYRIGHT2
+===================== */
+
+.copyright2{
+
+    text-align:center;
+
+    margin-top:-20px;
+
+    margin-bottom:-40px;
+}
+
+.copyright2 img{
+
+    width:150px;
+
+    height:auto;
+
+    opacity:.6;
+}
+
+/* =====================
+   INSTAGRAM2
+===================== */
+
+.instagram-link2{
+
+    text-align:center;
+
+    margin-bottom:2px;
+}
+
+.instagram-link2 img{
+
+    width:50px;
+
+    height:auto;
+
+    opacity:.7;
+
+    transition:.3s ease;
+}
+
+.instagram-link2 img:hover{
+
+    opacity:1;
+
+    transform:translateY(-2px);
+}
+
+.gallery-page.scrolled .logo-link{
+
+    opacity:1 !important;
+}
+
+.gallery-page.scrolled .menu-btn{
+
+    color:#fff !important;
+
+    opacity:1 !important;
+}
+
+.gallery-page.scrolled .logo{
+
+    filter: brightness(0) invert(1);
+}
+
+a, button{-webkit-tap-highlight-color: transparent;}
+
+/* =====================
+   HOME
+===================== */
+
+.index-area{
+
+    background:#f8f8f8;
+
+}
+
+.index-video{
+     width:100%;
+
+     max-width:1920px;
+
+     display:block;
+
+     margin: 30px auto 10px;
+
+     padding: 10px 0;
+}
+
+.index-video01{
+     width:100%;
+
+     max-width:1920px;
+
+     display:block;
+
+     margin: 10px auto 10px;
+
+     padding: 20px 0;
+
+}
+
+@media (min-width: 701px){
+
+    .index-video{
+       margin-bottom: 120px;
+    }
+
+}
+
+/* ===== Marquee ===== */
+
+.marquee-link {
+  width: 700px;
+}
+
+@media screen and (max-width:701px){
+
+    .marquee-link{
+        overflow: hidden;
+    }
+
+    .marquee-link video{
+        width: 160%;
+        margin-left: -60%;
+    }
+
+}
+
+@media (min-width: 701px){
+
+    .marquee-link{
+        width: 100%;      /* 今は370pxなので大きくする */
+    }
+
+}
+
+@keyframes perchColor {
+
+    0% ,49%{
+        color: #000000;
+    }
+
+    50% ,100%{
+        color: #f4a7b9;
+    }
+
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+     gap: 10px;
+    animation: marquee 35s linear infinite;
+}
+
+
+
+.index-credit01 a{
+
+    color:#111;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.index-credit01 a:hover{
+
+    opacity:.5;
+}
+
+.index-credit01{
+
+    width:85%;
+
+    max-width:700px;
+
+    margin:80px auto;
+
+    font-size:15px;
+}
+
+.index-credit01 h1{
+
+    margin-bottom:30px;
+
+    font-size:20px;
+}
+
+.index-credit01 p{
+
+    margin-bottom:30px;
+    
+}
+
+.index-credit01 hr {
+    border: none;
+    border-top: 1px solid #d0d0d0;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.index-credit01 a:not(.home-link){
+
+    color:#111;
+
+    text-decoration:underline;
+
+    text-underline-offset:4px;
+
+    text-decoration-thickness:0.8px;
+}
+
+.home-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.home-card img{
+    width:100%;
+    display:block;
+}
+
+.image-shadow{
+    position:absolute;
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,0.2) 0%,
+        rgba(0,0,0,0.08) 20%,
+        rgba(0,0,0,0) 50%
+    );
+
+    z-index:1;
+}
+
+.home-link{
+    position:absolute;
+    left:30px;
+    bottom:35px;
+    color:#fff;
+    z-index:2;
+
+    font-weight: 500;
+    text-decoration: none;
+
+    display: inline-block;
+}
+
+.home-link::after{
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+
+    width:0;
+    height:1px;
+
+    background:#fff;
+
+    transition: width .3s ease;
+}
+
+.home-link:hover::after{
+    width:100%;
+}
+
+/* スマホ */
+.home-grid{
+    display:block;
+}
+
+/* PC */
+@media (min-width: 701px){
+
+    .home-grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0px;          /* 画像同士の隙間 */
+    }
+
+    .home-card{
+        flex:1;
+    }
+
+    .home-card img{
+        width: 100%;
+        aspect-ratio: 4/5;
+        object-fit: cover;
+    }
+
+}
+
+/* =====================
+   gallery
+===================== */
+
+.gallery-content a{
+
+    color:#f8f8f8;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.gallery-content a:hover{
+
+    opacity:.5;
+}
+
+.gallery-content{
+
+    width:85%;
+
+    max-width:700px;
+
+    margin:20px auto;
+
+    font-size:15px;
+}
+
+.gallery-content h1{
+
+    margin-bottom:40px;
+
+    font-size:20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d0d0d0;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.gallery-content a{
+
+    color:#f8f8f8;
+
+    text-decoration:underline;
+
+    text-underline-offset:4px;
+
+    text-decoration-thickness:0.8px;
+}
+
+.gallery-space {
+  padding: 2vh 3vw;
+}
+
+.gallery-work {
+  display: block;
+  width: fit-content;
+  color: #222;
+  text-decoration: none;
+  padding: 50px 0 50px;
+}
+
+.gallery-work img {
+  display: block;
+  width: 320px;
+  height: auto;
+}
+
+.gallery-work video {
+    margin-top: 60px;
+    display: block;
+    width: 380px;
+    height: auto;
+}
+
+.gallery-work p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* 文字の位置 */
+
+.work-right {
+  margin-left: auto;
+}
+
+.work-right p {
+  text-align: right;
+}
+
+
+/* 小さい絵 */
+
+.gallery-doodle {
+  display: block;
+  width: 70px;
+}
+
+.doodle-01 {
+  margin-left: 75%;
+  padding: 100px 0 100px;
+}
+
+.doodle-02 {
+  margin-left: 10%;
+  padding: 100px 0 120px;
+}
+
+.doodle-03 {
+  margin-left: 30%;
+  padding: 120px 0 100px;
+}
+
+.doodle-04 {
+  margin-left: 80%;
+  padding: 120px 0 120px;
+}
+
+.work-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-search {
+  width: 500px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px 0 0px;
+}
+
+
+/* Searchボタン */
+
+.search-button {
+  background: none;
+  border: none;
+  padding: 0;
+
+  font-size: 16px;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+
+/* 最初は検索欄を隠す */
+
+.search-area {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 1px solid #222;
+}
+
+
+/* 入力欄 */
+
+.search-area input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  padding: 10px 0;
+
+  font-size: 16px;
+  font-family: inherit;
+}
+
+
+/* ×ボタン */
+
+.search-close {
+  background: none;
+  border: none;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.search-results {
+  max-width: 500px;
+  margin-top: 15px;
+}
+
+.search-result {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-result:hover {
+  opacity: 0.5;
+}
+
+/* =====================
+   WORK OVERLAY
+===================== */
+
+.work-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    overflow-y: auto;
+    overscroll-behavior: contain;
+
+    background: rgba(248, 248, 248, 0.45);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.6s ease,
+        visibility 0.6s ease;
+}
+
+
+/* 開いた状態 */
+
+.work-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* 画像エリア */
+
+.work-overlay-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 25vh;
+
+    padding: 20vh 0 15vh;
+}
+
+
+/* 作品画像 */
+
+.work-overlay-images img,
+.work-overlay-images video{
+    display: block;
+
+    width: min(70vw, 700px);
+    height: auto;
+
+    box-shadow:
+        0 20px 45px rgba(40, 40, 40, 0.22);
+}
+
+
+/* CLOSE */
+
+.work-close {
+    display: block;
+
+    margin: 0 auto 20vh;
+
+    border: none;
+    background: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    color: #2b2b2b;
+
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+
+/* スマホ */
+
+@media (max-width: 701px) {
+
+    .work-overlay {
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+    }
+
+    .work-overlay-images {
+        gap: 20vh;
+        padding-top: 15vh;
+    }
+
+    .work-overlay-images img {
+        width: 90vw;
+    }
+
+    .work-overlay-images video {
+        width: 90vw;
+    }
+
+}
+
+.work-title {
+  text-align: right;
+}
+
+.work-date {
+  font-size: 12px;
+  color: #828282;
+}
+
+.gallery-work img {
+  display: block;
+}
+
+.gallery-work .work-title {
+  margin: 8px 0 0 !important;
+  padding: 0;
+  line-height: 1;
+  text-align: right;
+}
+
+.music-link {
+  display: inline-block;
+  color: #111;
+}
+
+
+.music-link:hover {
+  opacity: 0.5;
+}
+
+.music-link,
+.music-link:visited {
+  color: #000;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.music-link:hover {
+  opacity: 0.5;
+}
+
+.work-info {
+  text-align: center;
+  width: 100%;
+  padding: 60px 0 100px;
+}
+
+.music-text {
+  white-space: pre-line;
+}
+
+
+#searchInput {
+  transition: opacity 0.7s ease;
+}
+
+#searchInput.placeholder-fade {
+  opacity: 0;
+}
