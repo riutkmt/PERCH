@@ -619,6 +619,17 @@ header{
     
 }
 
+@media (min-width: 701px){
+
+    .contact-content p{
+
+    margin-bottom:30px;
+    font-size:14px;
+    
+}
+
+}
+
 hr {
     border: none;
     border-top: 1px solid #d0d0d0;
