@@ -64,6 +64,25 @@ header{
     z-index: 1000;
 }
 
+@media (max-width: 701px) {
+
+  /* ロゴを上へ */
+  .logo-link {
+    top: 50px;
+  }
+
+  /* MENUを上へ */
+  .menu-btn {
+    top: 40px;
+  }
+
+  /* 言語切り替えを上へ */
+  .language {
+    bottom: 40px;
+  }
+
+}
+
 /* =====================
    MENU
 ===================== */
@@ -86,6 +105,12 @@ header{
     cursor: pointer;
 
     z-index: 1000;
+}
+
+@media (max-width: 701px) {
+  .menu-btn {
+    top: 50px !important;
+  }
 }
 
 /* =====================
@@ -455,6 +480,12 @@ header{
     cursor:pointer;
 }
 
+@media (max-width: 701px) {
+  #close-menu {
+    top: 50px !important;
+  }
+}
+
 
 /* =====================
    NAVIGATION
@@ -493,8 +524,6 @@ header{
     text-align:center;
 
     margin-top:-20px;
-
-    margin-bottom:80px;
 }
 
 .copyright img{
