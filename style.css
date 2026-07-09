@@ -109,7 +109,7 @@ header{
 
 @media (max-width: 701px) {
   .menu-btn {
-    top: 15px !important;
+    top: 20px !important;
   }
 }
 
@@ -247,6 +247,30 @@ header{
     margin: 30px auto 40px;
 }
 
+@media (max-width: 701px) {
+  .about-video{
+    width:100%;
+
+    max-width: 700px;
+
+    display:block;
+
+    margin: -35px auto 40px;
+  }
+
+  .credit{
+
+    color: #111;
+
+    margin-top:60px;
+
+    text-align:left;
+
+    font-size:14px;
+
+    letter-spacing:0.1em;
+}
+}
 
 .about-text{
 
@@ -362,12 +386,13 @@ header{
 
     .hero-text p{
 
-        font-size:16px;
+        font-size:14px;
     }
 
     .about-text{
 
         width:88%;
+        font-size: 14px;
     }
 
 }
@@ -497,7 +522,7 @@ header{
 
 @media (max-width: 701px) {
   #close-menu {
-    top: 7px !important;
+    top: 27px !important;
   }
 }
 
@@ -963,6 +988,8 @@ a, button{-webkit-tap-highlight-color: transparent;}
     text-decoration: none;
 
     display: inline-block;
+
+    white-space: nowrap;
 }
 
 .home-link::after{
@@ -1183,6 +1210,13 @@ hr {
   border-bottom: 1px solid #222;
 }
 
+@media (max-width: 768px) {
+
+  .search-area {
+    margin-top: -70px;
+  }
+
+}
 
 /* 入力欄 */
 
