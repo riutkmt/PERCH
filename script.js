@@ -293,24 +293,25 @@ let placeholderIndex = 0;
 
 setInterval(() => {
 
-  // まず薄くする
+  // 文字を入力中なら何もしない
+  if (searchInput.value !== "") {
+    return;
+  }
+
   searchInput.classList.add("placeholder-fade");
 
   setTimeout(() => {
 
-    // 一度完全に消す
     searchInput.placeholder = "";
 
     setTimeout(() => {
 
-      // 次の文字に切り替える
       placeholderIndex =
         (placeholderIndex + 1) % placeholders.length;
 
       searchInput.placeholder =
         placeholders[placeholderIndex];
 
-      // ふわっと表示
       searchInput.classList.remove("placeholder-fade");
 
     }, 100);
